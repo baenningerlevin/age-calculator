@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Age calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main class="card">
+      <div class="container">
+        <form>
+          <div class="form-container">
+            <div class="block">
+              <label for="day"  class="form-label">Day</label>
+              <input type="number" id="day" placeholder="DD" />
+              <p class="error"></p>
+            </div>
+            <div class="block">
+              <label for="month" class="form-label">Month</label>
+              <input type="number" id="month" placeholder="MM" />
+              <p class="error"></p>
+            </div>
+            <div class="block">
+              <label for="year" class="form-label">Year</label>
+              <input type="number" id="year" placeholder="YYYY" />
+              <p class="error"></p>
+            </div>
+          </div>
+          <div class="submit-block">
+            <hr />
+            <button type="submit" class="submit-btn">
+              <img src="./images/icon-arrow.svg" alt="arrow icon" />
+            </button>
+          </div>
+        </form>
+        <div class="output">
+          <h2>&nbsp;<span id="YY">--</span>&nbsp;years</h2>
+          <h2>&nbsp;<span id="MM">--</span>&nbsp;months</h2>
+          <h2>&nbsp;<span id="DD">--</span>&nbsp;days</h2>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
