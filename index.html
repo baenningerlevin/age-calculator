@@ -14,18 +14,28 @@
         <form>
           <div class="form-container">
             <div class="block">
-              <label for="day"  class="form-label">Day</label>
-              <input type="number" id="day" placeholder="DD" />
+              <label for="day" class="form-label">Day</label>
+              <input type="number" id="day" placeholder="DD" inputmode="numeric" pattern="[0-9]*" />
               <p class="error"></p>
             </div>
             <div class="block">
               <label for="month" class="form-label">Month</label>
-              <input type="number" id="month" placeholder="MM" />
+              <input
+                type="number"
+                id="month"
+                placeholder="MM"
+                inputmode="numeric"
+                pattern="[0-9]*" />
               <p class="error"></p>
             </div>
             <div class="block">
               <label for="year" class="form-label">Year</label>
-              <input type="number" id="year" placeholder="YYYY" />
+              <input
+                type="number"
+                id="year"
+                placeholder="YYYY"
+                inputmode="numeric"
+                pattern="[0-9]*" />
               <p class="error"></p>
             </div>
           </div>
