@@ -39,7 +39,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/baenningerlevin/age-calculator)
-- Live Site URL: [Add live site URL here](https://levin-baenninger-age-calculator.netlify.app)
+- Live Site URL: [Netlify](https://levin-baenninger-age-calculator.netlify.app)
 
 ## My process
 
