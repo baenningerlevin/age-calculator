@@ -40,6 +40,7 @@ const validate = () => {
   inputFields.forEach((inputField) => {
     // Resetting error state
     resetErrorState(inputField);
+    let year = new Date().getFullYear();
 
     // Checking if inputField is empty
     if (!inputField.value) {
